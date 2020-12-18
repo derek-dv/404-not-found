@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .h1-head {
   margin: 1em;
   font-size: 12px;
@@ -46,7 +47,7 @@
   margin-top: 2em;
   padding: 1em;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   border: none;
   cursor: pointer;
 }
@@ -55,6 +56,12 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
