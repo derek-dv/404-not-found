@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.h1-head {
+  margin: 1em;
+  font-size: 12px;
+  font-family: "Inconsolata";
+  font-weight: 700;
+}
+.body {
+  display: grid;
+  grid-template-columns: repeat(2, 40% 60%);
+  grid-template-areas: "img txt";
+}
+
+.img {
+  margin: 1em;
+  grid-area: img;
+  text-align: center;
+  padding-top: 5em;
+}
+.img img {
+  width: 80%;
+}
+
+.main {
+  margin-right: 3em;
+  grid-area: txt;
+  padding: 4em;
+}
+
+.main > h2 {
+  font-family: "Space Mono";
+  font-size: xx-large;
+  line-height: 2em;
+  color: #333333;
+}
+
+.main > p {
+  font-family: "Space Mono";
+  color: #4f4f4f;
+  width: 60%;
+}
+
+.main > button {
+  background-color: #333333;
+  margin-top: 2em;
+  padding: 1em;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .body {
+    margin: 1em;
+    padding: 0;
+    display: block;
+  }
+
+  .img {
+    padding: 0;
+    padding: 1em;
+  }
+  .img img{
+      width: 60%;
+  }
+  .main {
+    padding: 1em;
+  }
+}
